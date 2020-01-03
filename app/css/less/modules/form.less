@@ -1,0 +1,185 @@
+.modal-form__content {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-field {
+  margin-bottom: 26px;
+  position: relative;
+  flex: 0 0 96%;  
+}
+
+.form-field:nth-child(3),
+.form-field:nth-child(4),
+.form-field:nth-child(5) {
+  flex: 0 0 45%;  
+}
+
+.form-field:nth-child(3),
+.form-field:nth-child(4) {
+  margin-right: 34px;
+}
+
+.form-field:nth-child(6) {
+  margin-bottom: 47px;
+}
+
+.form-field__input,
+.form-field__select {  
+  height: 65px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #eaeaea;
+  width: 100%;
+  .text('Open Sans', 16px, #333);
+  padding-top:15px;
+}
+
+.form-field__date {
+  position: absolute;
+  width: 140px;
+  background-color: #fff;
+  bottom: 15px;
+  left: 22px;
+  .text('Open Sans', 16px, #333);   
+}
+
+.form-field__date sup {
+  font-size: 10px;
+}
+
+
+.form-field__select { 
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}   
+
+.form-field__select::-ms-expand { 
+  display: none; 
+}
+
+.form-field__input#date {
+  cursor: pointer;
+}
+
+.form-field__input + label {
+  position: absolute;
+  left: 22px;
+  top: 25px;
+  .text('Open Sans Extra Bold', 16px, #adadad);
+  transform-origin: 0 0;
+  transition: all 0.5s;
+}
+
+.form-field__select + label{
+  position: absolute;
+  left: 22px;
+  top: 15px;
+  .text('Open Sans Extra Bold', 12px, #adadad);
+}
+
+.form-field__input:not(:placeholder-shown) + label {
+  transform: translateY(-10px) scale(.75); 
+}
+
+.form-field__input:focus + label
+{
+  outline: none;
+  transform: translateY(-10px) scale(.75)!important; 
+}
+
+.form-field__icon {
+  position: absolute;
+  top: 27px;
+  right: 20px;
+  color: #adadad;
+  font-size: 10px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.form-field__checkmark, 
+.form-field__notification { 
+  position: absolute;
+  top: 25px;
+  right: -25px;
+  width: 18px;
+  height: 18px;
+}
+
+
+.form-field__checkmark {
+  background-image: url(../../img/Checkmark.png);
+}
+
+.form-field__notification {
+  background-image: url(../../img/Notification.png);
+}
+
+.form-field__valid {
+  position: absolute;
+  bottom: -15px;
+  .text('Open Sans Semi Bold', 12px, #db4433);
+}
+
+.form-checkbox {
+  position: relative;
+  flex: 0 0 100%;
+  margin-bottom: 32px;
+}
+
+.form-checkbox__field:not(checked) { 
+  position: absolute;
+  opacity: 0;  
+  margin: 0;  
+}
+
+.form-checkbox__field:not(checked) + label {
+  display: inline-block;
+  position: relative;
+  .text('Meryad Pro', 12px, #666);
+  line-height: 1.2;
+  padding-left: 25px;
+}
+
+.form-checkbox__field:not(checked) + label:hover:before {
+  cursor: pointer;
+}
+
+.form-checkbox__field:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 2px solid #666;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.form-checkbox__field:checked + label:before {
+  background-image: url(../../img/check.png);
+}
+
+.form-button {
+  border: 2px solid #adadad;
+  .text('Open Sans Extra Bold', 14px, #000);
+  height: 45px;
+  padding: 10px 25px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;  
+}
+
+.modal-form__content_text {
+  margin-top: 40px;
+  .text('Open Sans', 12px, #666);
+  line-height: 1.6;  
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fuse8 test</title>
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+                <a class="menu__link js-open-modal" href="#" data-target="openModal" >
+                    <i class="icon-profile  menu__link_icon"></i>Registration
+                </a>
+            </nav>            
+            <div  class="modal" id="openModal">
+                <div class="modal__close js-modal-close"></div>
+                <div class="modal__header">                    
+                    <h3 class="modal__header_subtitle">Come and say hello</h3>
+                    <h1 class="modal__header_title">Register for an Open Day</h1>
+                </div>  
+                <div class="modal__content">                    
+                    <div class="modal-form">
+                        <p class="modal-form__text">Open Days are the perfect opportunity to get to know us, visit our campus, see acccommodation, meet academics, and get the low-down on the Essex student life.</p>
+                        <h2 class="modal-form__title">Book your place</h2>
+                        <form class="modal-form__content js-form-submit" enctype="multipart/form-data">
+                            <div class="form-field"> 
+                                <select class="form-field__select js-select" id="education" name="education">
+                                    <option selected value hidden>Select education</option>                                     
+                                    <option value="Secondary education">Secondary education</option>
+                                    <option value="Undergraduate">Undergraduate</option>
+                                    <option value="Postgraduate education">Postgraduate education</option>                                    
+                                </select>                              
+                                <label for="education">I am an</label>
+                                <i class="form-field__icon icon-arrow-down2"></i>
+                            </div>
+                            <div class="form-field"> 
+                                <select class="form-field__select js-select" id="campus" name="campus">
+                                    <option selected value hidden>Campus</option>                                     
+                                    <option value="Secondary education">Colchester</option>
+                                    <option value="Undergraduate">Essex</option>
+                                    <option value="Postgraduate education">Birmingham</option>                                    
+                                </select>                              
+                                <label for="campus">Campus</label>
+                                <i class="form-field__icon icon-arrow-down2"></i>
+                            </div>                            
+                            <div class="form-field">                                
+                                <input class="form-field__input" id="date" type="text"  name="date" placeholder="&nbsp;" autocomplete="off" required>
+                                <label for="date">Date*</label>
+                                <i class="form-field__icon icon-arrow-down2"></i>
+                                <div class="form-field__checkmark"></div>                                
+                            </div>
+                            <div class="form-field">                                
+                                <input class="form-field__input js-input-name" id="firstname" type="text"  name="firstname" placeholder="&nbsp;" required>
+                                <label for="firstname">First Name*</label>                             
+                                <div class="form-field__valid"></div>                                
+                            </div>
+                            <div class="form-field">                                
+                                <input class="form-field__input js-input-name" id="lastname" type="text"  name="lastname" placeholder="&nbsp;" required>
+                                <label for="lastname">Last Name*</label>                              
+                                <div class="form-field__valid"></div>
+                            </div>
+                            <div class="form-field">                                
+                                <input class="form-field__input js-input-email" id="email" type="text"  name="email" placeholder="&nbsp;" required>
+                                <label for="email">Email Address*</label>                          
+                                <div class="form-field__valid"></div>
+                            </div>                            
+                            <div class="form-checkbox">
+                                <input type="checkbox" class="form-checkbox__field" id="checkbox" required>
+                                <label class="box" for="checkbox">I would like to receive email updates from the University</label> 
+                            </div>
+                            <button class="form-button" type="submit">Make A Booking</button>
+                            <div class="modal-form__content_text">The information provided by you will be held by the University of Essex in accordance with the University's Data protection Policy and may be used for the University's marketing purposes. On occasion we may contact you to advertise events with information relevant to student recruitment. If you do not wish to receive this information, please select the opt out function which can be found at the foot of your confirmation email. You will receive this email within 24 hours of registering.</div>                  
+                        </form>
+                    </div>                
+                </div>
+            </div>          
+        </header>
+        <footer></footer>
+        <div class="overlay js-overlay-modal"></div>        
+    </body>
+</html>

@@ -1,0 +1,151 @@
+body {
+  min-width: 320px;
+  background-color: #fff;
+}
+
+header {
+  display: flex;  
+}
+
+.menu {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu__link {
+  padding: 15px;
+  background-color: #dfe3e8;
+  border-radius: 5px;
+  box-shadow: 12px 12px 15px -15px #033772;  
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  .text('Open Sans Bold', 18px, #033772);
+}
+
+.menu__link:hover {
+  background-color: #f7eded;
+}
+
+.menu__link_icon {
+  font-size: 16px;
+  padding-right: 8px;
+}
+
+
+.modal {
+  .position_fixed;
+  .visible_hidden;
+  width: 100%;
+  height: 0;
+  max-width: 745px; 
+  background-color:  #eaeaea;   
+  transform: translate(0,-25%);  
+  z-index: 30; 
+} 
+
+.modal.active {
+  .visible;
+  transform: translate(0,0);
+  height: auto;
+  transition: all .4s ease-in-out;  
+  margin: 30px auto 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.overlay {
+  .position_fixed;
+  .visible_hidden;
+  z-index: 20;
+  background-color: #2f2f2f;
+  transition: opacity .15s linear;
+}
+
+.overlay.active{
+  .visible;
+}
+
+.modal__close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../../img/Close.png);
+  cursor: pointer;
+}
+
+.modal__header {
+  background: linear-gradient(to right, rgba(0, 0, 0, .5), transparent 100%), url(../../img/foto.jpg)  center no-repeat;
+  height: 320px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.modal__header_subtitle {
+  .text('Open Sans Extra Bold', 18px, #db4433); 
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.modal__header_title {
+  .text('Open Sans Extra Bold', 48px, #fff); 
+  max-width: 400px;
+}
+
+.modal__content {  
+  height: 810px;
+  box-sizing: border-box;
+  padding: 40px;  
+}
+
+.modal-form {
+  background-color: #fff;
+  margin-top: -170px;
+  padding: 40px;
+
+}
+
+.modal-form__text {
+  .text('Open Sans', 16px, #333); 
+  line-height: 1.5;
+}
+
+.modal-form__title {
+  .text('Open Sans Extra Bold', 24px); 
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
